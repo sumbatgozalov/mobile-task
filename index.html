@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./themepure.png" alt="" />
+      </div>
+
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-menu-head first" id="first">
+            <a href="#"><img src="./menu logo.png" alt="" /></a>
+            <button class="btn">
+              <span class="xbtn">X</span>
+              <span class="closebtn">CLOSE</span>
+            </button>
+          </li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li drop-menu-container>
+            <a id="shop" href="#"
+              >SHOP<span class="icon"><i class="fa-solid fa-plus"></i></span
+            ></a>
+            <ul class="drop-menu">
+              <li><a href="#">TEMPLATES</a></li>
+              <li><a href="#">WORDPRESS</a></li>
+              <li id="psd"><a  href="#">PSD</a></li>
+            </ul>
+          </li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+
+    <script src="./main.js"></script>
+  </body>
+</html>

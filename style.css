@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #f0f0f0;
+}
+.logo img {
+  width: 150px;
+}
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  right: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.bar {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+}
+
+.hamburger:hover .bar {
+  transform: rotateZ(-27deg);
+  transition: 0.5s;
+  transform-origin: center;
+  margin-left: auto;
+}
+
+.hamburger:hover .bar:nth-child(1) {
+  width: 22px;
+}
+.hamburger:hover .bar:nth-child(2) {
+  width: 29px;
+}
+
+.nav-menu {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  padding: 10px 20px;
+  transition: 0.7s;
+  transform: translateX(100%);
+  transition: 0.5s ease;
+}
+.show-nav {
+  transform: translateX(0%);
+}
+.nav-menu-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.nav-menu-head img {
+  width: 150px;
+}
+.turn {
+  transform: rotateZ(45deg);
+  transition: 0.5s;
+}
+button {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s;
+  border: 2px solid rgb(43, 83, 214);
+}
+button:hover {
+  width: 70px;
+  height: 40px;
+  border-radius: 2px;
+}
+button span:nth-child(1) {
+  font-size: 14px;
+  color: white;
+  transition: 0.4s;
+  transform: translateY(10px);
+}
+button span:nth-child(2) {
+  font-size: 14px;
+  transition: 0.4s;
+  transform: translateY(40px);
+  color: white;
+}
+button:hover span:nth-child(1) {
+  transform: translateY(-30px);
+  transition: 0.4s;
+}
+button:hover span:nth-child(2) {
+  transform: translateY(-5px);
+  transition: 0.4s;
+}
+.drop-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.drop-menu {
+  top: -150px;
+  z-index: -13;
+  position: absolute;
+}
+
+.header li {
+  padding: 15px;
+  border-bottom: 1px solid white;
+}
+.header li a {
+  color: white;
+  display: block;
+}
+.header li a:hover {
+  transition: 0.4s;
+  color: blue;
+}
+
+#first,#psd{
+  border: none;
+}
+#shop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-drop {
+  position: relative;
+  z-index: 13;
+  transition: 0.1s;
+  top: 10px;
+}
+.icon {
+  border-left: 1px solid white  ;
+  padding: 10px;
+  font-size: 15px;
+  position: relative;
+}
+
+.fa-solid{
+  color: white;
+}
+
+
+
+

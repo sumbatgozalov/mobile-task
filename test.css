@@ -1,0 +1,85 @@
+button {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button:hover {
+  width: 70px;
+  height: 40px;
+  border-radius: 2px;
+}
+button span:nth-child(1) {
+  font-size: 14px;
+  color: red;
+  transition: 0.4s;
+  transform: translateY(10px);
+}
+button span:nth-child(2) {
+  font-size: 14px;
+  transition: 0.4s;
+  transform: translateY(40px);
+}
+button:hover span:nth-child(1) {
+  transform: translateY(-30px);
+  transition: 0.4s;
+}
+button:hover span:nth-child(2) {
+  transform: translateY(-5px);
+  transition: 0.4s;
+}
+/* Left */
+/* .mob-menu{
+position: fixed;
+top: 0;
+left: 0;
+transform: translateX(-100%);
+transition: 0.5s ease;
+} 
+.show{
+    transform: translateX(0);}   */
+/* Right */
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.5s ease;
+}
+.show {
+  transform: translateX(0);
+}
+/* Top */
+/* .mob-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+
+.show {
+  transform: translateY(0);
+} */
+/* Bottom */
+/* .mob-menu {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.show {
+  transform: translateY(0);
+}  */
